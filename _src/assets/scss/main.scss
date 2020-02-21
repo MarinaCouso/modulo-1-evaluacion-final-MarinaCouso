@@ -1,1 +1,17 @@
 @import "core/_reset.scss";
+
+.header {
+  border: blue solid 5px;
+}
+.main {
+  border: red solid 5px;
+}
+.section-1 {
+  border: solid 5px green;
+}
+.section-2 {
+  border: orange solid 5px;
+}
+.footer {
+  border: magenta solid 5px;
+}
