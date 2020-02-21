@@ -1,13 +1,12 @@
 @import "core/_reset.scss";
+@import "components/_typography";
+@import "layout/_header.scss";
+@import "layout/_section1.scss";
+@import "layout/_section2.scss";
+@import "layout/_footer.scss";
 
-.header {
-  border: blue solid 5px;
-}
 .main {
   border: red solid 5px;
-}
-.section-1 {
-  border: solid 5px green;
 }
 .section-2 {
   border: orange solid 5px;
