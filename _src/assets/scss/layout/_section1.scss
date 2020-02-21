@@ -1,0 +1,25 @@
+.section1 {
+  display: flex;
+}
+.section1-small {
+  font-family: $fontText;
+  font-size: 14px;
+  color: #8ccbea;
+  margin: 30px 215px 1px 15px;
+}
+.section1-h2 {
+  font-family: $fontTitle;
+  font-size: 24px;
+  margin: 0px 15px 15px 15px;
+}
+
+.section1-text {
+  font-family: $fontText;
+  font-size: 18px;
+  margin: 0px 15px 30px 15px;
+  color: #4a4a4a;
+}
+
+.btn-go {
+  margin: 0px 254px 45px 41px;
+}
