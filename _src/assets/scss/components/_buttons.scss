@@ -1,17 +1,23 @@
 .button {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   color: #f26002;
   padding: 0.5em;
   border: #f26002 solid;
   border-radius: 2em;
   text-decoration: none;
-
   &.btn-header {
-    color: red($color: #000000);
+    border: none;
+    margin: 0px auto 45px auto;
+    padding: 0.7em 0.5em;
   }
   &.btn-go {
+    width: 4em;
     padding: 0.5em 1.2em;
+    justify-content: left;
   }
   &.btn-more {
     background-color: #f26002;
@@ -22,10 +28,10 @@
   }
   &.btn-footer {
     border: none;
-    width: 2em;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
     position: relative;
-    bottom: 15px;
+    bottom: 1.5em;
   }
 }
 

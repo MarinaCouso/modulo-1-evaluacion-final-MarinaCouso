@@ -2,10 +2,11 @@
   display: flex;
 }
 .section1-small {
+  display: inline-block;
   font-family: $fontText;
   font-size: 14px;
   color: #8ccbea;
-  margin: 30px auto 1px auto;
+  padding: 30px auto 1px auto;
 }
 .section1-h2 {
   font-family: $fontTitle;

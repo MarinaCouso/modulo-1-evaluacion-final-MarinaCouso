@@ -12,9 +12,12 @@
 }
 
 .hamburguer {
-  display: block;
-  background-color: blue;
-  background-image: url("../images/ico-menu.svg") no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0271bc;
+  color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -23,7 +26,7 @@
 }
 
 .header-content {
-  margin: 284px auto 143px auto;
+  margin: 284px auto 45px auto;
 }
 .header-h1 {
   font-family: $fontTitle;
