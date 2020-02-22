@@ -1,0 +1,33 @@
+.button {
+  display: inline-block;
+  background-color: white;
+  color: #f26002;
+  padding: 0.5em;
+  border: #f26002 solid;
+  border-radius: 2em;
+  text-decoration: none;
+
+  &.btn-header {
+    color: red($color: #000000);
+  }
+  &.btn-go {
+    padding: 0.5em 1.2em;
+  }
+  &.btn-more {
+    background-color: #f26002;
+    color: white;
+    padding: 0.5em 1.2em;
+    width: 12em;
+    font-weight: bold;
+  }
+  &.btn-footer {
+    border: none;
+    width: 2em;
+    height: 2em;
+    position: relative;
+    bottom: 15px;
+  }
+}
+
+// .btn-header .btn-go .btn-more .btn-footer {
+// }

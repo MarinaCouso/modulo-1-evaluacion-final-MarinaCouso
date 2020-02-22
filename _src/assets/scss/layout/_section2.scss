@@ -1,20 +1,23 @@
 .section-2 {
   display: grid;
   text-align: center;
+  background-color: #eff9ff;
 }
-
 .section2-h2 {
   grid-column: span 12;
   font-family: $fontTitle;
+  margin: 30px auto 45px auto;
 }
 .article {
-  grid-column: span 12;
+  grid-column: 6 / 9;
+  margin: 0px auto 45px auto;
 }
 .article-title {
   font-family: $fontTitle;
 }
 .section2-btn {
   grid-column: span 12;
+  margin: 0px auto 60px auto;
 }
 @media all and (min-width: 768px) {
   .article {
