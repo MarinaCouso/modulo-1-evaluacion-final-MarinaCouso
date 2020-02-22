@@ -2,13 +2,22 @@
   display: grid;
   text-align: center;
 }
+
 .section2-h2 {
-  grid-column: 1/12;
+  grid-column: span 12;
+  font-family: $fontTitle;
 }
 .article {
-  grid-column: span 4;
+  grid-column: span 12;
 }
-
+.article-title {
+  font-family: $fontTitle;
+}
 .section2-btn {
-  grid-column: 1/12;
+  grid-column: span 12;
+}
+@media all and (min-width: 768px) {
+  .article {
+    grid-column: span 4;
+  }
 }

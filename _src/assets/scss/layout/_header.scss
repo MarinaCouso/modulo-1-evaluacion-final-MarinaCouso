@@ -23,17 +23,17 @@
 }
 
 .header-content {
-  margin: 284px 15px 143px 15px;
+  margin: 284px auto 143px auto;
 }
 .header-h1 {
   font-family: $fontTitle;
-  font-size: 42px;
+  font-size: 2.6em;
   margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
 }
 .header-text {
   font-family: $fontText;
-  font-size: 16px;
+  font-size: 1em;
   text-align: center;
 }
