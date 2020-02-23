@@ -9,8 +9,10 @@
   margin: 30px auto 45px auto;
 }
 .article {
-  grid-column: 6 / 9;
+  grid-column: 5 / 9;
   margin: 0px auto 45px auto;
+  width: 184px;
+  font-size: 18px;
 }
 .article-title {
   font-family: $fontTitle;
@@ -22,5 +24,18 @@
 @media all and (min-width: 768px) {
   .article {
     grid-column: span 4;
+    width: 210px;
+  }
+  .article-title {
+    margin: auto auto 14px auto;
+  }
+}
+@media all and (min-width: 1200px) {
+  .article {
+    width: 350px;
+    font-size: 20px;
+  }
+  .article-title {
+    font-size: 24px;
   }
 }

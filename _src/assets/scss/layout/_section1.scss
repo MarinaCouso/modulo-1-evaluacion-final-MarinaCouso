@@ -1,12 +1,9 @@
-.section1 {
-  display: flex;
-}
 .section1-small {
   display: inline-block;
   font-family: $fontText;
   font-size: 14px;
   color: #8ccbea;
-  padding: 30px auto 1px auto;
+  margin: 30px auto 1px auto;
 }
 .section1-h2 {
   font-family: $fontTitle;
@@ -21,6 +18,8 @@
   color: #4a4a4a;
 }
 
-.btn-go {
-  margin: 0px auto 45px auto;
+@media all and (min-width: 1200px) {
+  .section1 {
+    margin: auto 193.8px auto 193.8px;
+  }
 }

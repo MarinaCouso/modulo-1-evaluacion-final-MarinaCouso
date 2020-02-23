@@ -17,6 +17,7 @@
   list-style: none;
   text-transform: uppercase;
   text-align: center;
+  line-height: 30px;
   &.pages {
     margin: 60px 123px 30px 124px;
   }
@@ -33,4 +34,33 @@
 }
 .heart {
   color: #f26002;
+}
+@media all and (min-width: 768px) {
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .footer-menu-contents {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    &.pages {
+      margin: 45px 0px 45px 30px;
+      display: flex;
+      flex-direction: column;
+      order: 2;
+    }
+    &.rrss {
+      margin: 45px 288.8px 45px 30px;
+      display: flex;
+      flex-direction: column;
+      order: 1;
+    }
+  }
+  .copy {
+    align-items: flex-start;
+    order: 3;
+    margin: auto 0px auto 288.8px;
+    width: 159px;
+  }
 }

@@ -1,7 +1,6 @@
 .button {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: white;
   color: #f26002;
@@ -11,13 +10,14 @@
   text-decoration: none;
   &.btn-header {
     border: none;
-    margin: 0px auto 45px auto;
+    margin: 0px auto 53px auto;
     padding: 0.7em 0.5em;
   }
   &.btn-go {
-    width: 4em;
+    width: 76px;
     padding: 0.5em 1.2em;
-    justify-content: left;
+    margin: 0px auto 45px auto;
+    font-size: 20px;
   }
   &.btn-more {
     background-color: #f26002;
@@ -33,7 +33,31 @@
     position: relative;
     bottom: 1.5em;
   }
+  @media all and (min-width: 768px) {
+    &.btn-header {
+      margin: 0px auto 45px auto;
+    }
+    &.btn-go {
+      width: 91px;
+      padding: 0.5em 1.2em;
+      margin: 0px auto 60px 0px;
+    }
+    &.btn-footer {
+      position: relative;
+      bottom: 6.5em;
+      right: 28.5em;
+    }
+  }
+  @media all and (min-width: 1200px) {
+    &.btn-header {
+      margin: 0px auto 13px auto;
+    }
+    &.btn-go {
+      width: 160px;
+      padding: 0.5em 2em;
+    }
+    &.btn-footer {
+      right: 31em;
+    }
+  }
 }
-
-// .btn-header .btn-go .btn-more .btn-footer {
-// }
