@@ -6,6 +6,7 @@
     grid-column: span 12;
     font-family: $fontTitle;
     margin: 30px auto 45px auto;
+    text-transform: capitalize;
   }
   .article {
     grid-column: 5 / 9;
