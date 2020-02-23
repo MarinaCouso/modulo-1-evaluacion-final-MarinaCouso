@@ -1,41 +1,30 @@
-.section-2 {
+.section2 {
   display: grid;
   text-align: center;
   background-color: #eff9ff;
-}
-.section2-h2 {
-  grid-column: span 12;
-  font-family: $fontTitle;
-  margin: 30px auto 45px auto;
-}
-.article {
-  grid-column: 5 / 9;
-  margin: 0px auto 45px auto;
-  width: 184px;
-  font-size: 18px;
-}
-.article-title {
-  font-family: $fontTitle;
-}
-.section2-btn {
-  grid-column: span 12;
-  margin: 0px auto 60px auto;
-}
-@media all and (min-width: 768px) {
+  .section2-h2 {
+    grid-column: span 12;
+    font-family: $fontTitle;
+    margin: 30px auto 45px auto;
+  }
   .article {
-    grid-column: span 4;
-    width: 210px;
+    grid-column: 5 / 9;
+    margin: 0px auto 45px auto;
+    width: 184px;
+    font-size: 18px;
+    @media all and (min-width: 768px) {
+      grid-column: span 4;
+      width: 210px;
+    }
   }
   .article-title {
-    margin: auto auto 14px auto;
+    font-family: $fontTitle;
+    @media all and (min-width: 768px) {
+      margin: auto auto 14px auto;
+    }
   }
-}
-@media all and (min-width: 1200px) {
-  .article {
-    width: 350px;
-    font-size: 20px;
-  }
-  .article-title {
-    font-size: 24px;
+  .section2-btn {
+    grid-column: span 12;
+    margin: 0px auto 60px auto;
   }
 }

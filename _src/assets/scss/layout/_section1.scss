@@ -1,25 +1,23 @@
-.section1-small {
-  display: inline-block;
-  font-family: $fontText;
-  font-size: 14px;
-  color: #8ccbea;
-  margin: 30px auto 1px auto;
-}
-.section1-h2 {
-  font-family: $fontTitle;
-  font-size: 24px;
-  margin: 0px auto 15px auto;
-}
+.section1 {
+  .section1-small {
+    display: inline-block;
+    font-size: 14px;
+    color: #8ccbea;
+    margin: 30px auto 1px auto;
+  }
+  .section1-h2 {
+    font-family: $fontTitle;
+    font-size: 24px;
+    margin: 0px auto 15px auto;
+  }
 
-.section1-text {
-  font-family: $fontText;
-  font-size: 18px;
-  margin: 0px auto 30px auto;
-  color: #4a4a4a;
-}
+  .section1-text {
+    font-size: 18px;
+    margin: 0px auto 30px auto;
+    color: #4a4a4a;
+  }
 
-@media all and (min-width: 1200px) {
-  .section1 {
+  @media all and (min-width: 1200px) {
     margin: auto 193.8px auto 193.8px;
   }
 }

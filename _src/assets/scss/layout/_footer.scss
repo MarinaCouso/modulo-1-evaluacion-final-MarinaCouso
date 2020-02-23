@@ -10,8 +10,23 @@
     color: white;
     text-decoration: none;
   }
+  @media all and (min-width: 768px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
 
+.container-btn-footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -57.3em;
+  right: 0em;
+  @media all and (min-width: 768px) {
+    bottom: -40em;
+  }
+}
 .footer-menu-contents {
   font-size: 16px;
   list-style: none;
@@ -24,6 +39,33 @@
   &.rrss {
     margin: 0px 86px 30px 87px;
   }
+  @media all and (min-width: 768px) {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    &.pages {
+      margin: 45px 30px 45px 30px;
+      display: flex;
+      flex-direction: column;
+      order: 2;
+    }
+    &.rrss {
+      margin: 45px 0px auto 0px;
+      display: flex;
+      flex-direction: column;
+      order: 1;
+    }
+  }
+  @media all and (min-width: 1200px) {
+    flex-direction: row;
+    &.pages {
+      margin-right: 0px;
+    }
+    &.rrss {
+      margin-right: 288.8px;
+      margin-left: 30px;
+    }
+  }
 }
 .copy {
   font-size: 14px;
@@ -31,36 +73,14 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 45px;
-}
-.heart {
-  color: #f26002;
-}
-@media all and (min-width: 768px) {
-  .footer {
-    flex-direction: row-reverse;
-    justify-content: center;
+  .heart {
+    color: #f26002;
   }
-  .footer-menu-contents {
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    &.pages {
-      margin: 45px 0px 45px 30px;
-      display: flex;
-      flex-direction: column;
-      order: 2;
-    }
-    &.rrss {
-      margin: 45px 288.8px 45px 30px;
-      display: flex;
-      flex-direction: column;
-      order: 1;
-    }
-  }
-  .copy {
+  @media all and (min-width: 768px) {
     align-items: flex-start;
     order: 3;
+  }
+  @media all and (min-width: 1200px) {
     margin: auto 0px auto 288.8px;
-    width: 159px;
   }
 }

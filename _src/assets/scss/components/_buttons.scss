@@ -30,34 +30,24 @@
     border: none;
     width: 2.5em;
     height: 2.5em;
-    position: relative;
-    bottom: 1.5em;
   }
   @media all and (min-width: 768px) {
     &.btn-header {
-      margin: 0px auto 45px auto;
+      margin-bottom: 45px;
     }
     &.btn-go {
       width: 91px;
       padding: 0.5em 1.2em;
       margin: 0px auto 60px 0px;
     }
-    &.btn-footer {
-      position: relative;
-      bottom: 6.5em;
-      right: 28.5em;
-    }
   }
   @media all and (min-width: 1200px) {
     &.btn-header {
-      margin: 0px auto 13px auto;
+      margin-bottom: 13px;
     }
     &.btn-go {
       width: 160px;
       padding: 0.5em 2em;
-    }
-    &.btn-footer {
-      right: 31em;
     }
   }
 }

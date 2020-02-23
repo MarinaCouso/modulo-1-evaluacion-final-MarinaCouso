@@ -9,13 +9,44 @@
   justify-content: flex-end;
   align-items: center;
   color: white;
+
+  .header-content {
+    margin: 284px auto 45px auto;
+    text-align: center;
+  }
+  .header-h1 {
+    font-family: $fontTitle;
+    font-size: 42px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+  }
+
+  @media all and (min-width: 768px) {
+    .header-content {
+      margin: 384px auto 120px auto;
+    }
+    .header-h1 {
+      font-size: 80px;
+      margin-bottom: 20px;
+    }
+    .header-text {
+      font-size: 24px;
+    }
+  }
+  @media all and (min-width: 1200px) {
+    .header-h1 {
+      font-size: 100px;
+      margin-bottom: 0px;
+    }
+  }
 }
 
 .hamburguer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   background-color: #0271bc;
   color: white;
   position: fixed;
@@ -23,42 +54,4 @@
   left: 0;
   width: 44px;
   height: 44px;
-}
-
-.header-content {
-  margin: 284px auto 45px auto;
-}
-.header-h1 {
-  font-family: $fontTitle;
-  font-size: 42px;
-  margin-bottom: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 290px;
-}
-.header-text {
-  font-family: $fontText;
-  font-size: 1em;
-  text-align: center;
-}
-
-@media all and (min-width: 768px) {
-  .header-content {
-    margin: 384px auto 120px auto;
-  }
-  .header-h1 {
-    font-size: 80px;
-    margin-bottom: 20px;
-    width: 690px;
-  }
-  .header-text {
-    font-size: 24px;
-  }
-}
-@media all and (min-width: 1200px) {
-  .header-h1 {
-    font-size: 100px;
-    margin-bottom: 0px;
-    width: 730px;
-  }
 }
