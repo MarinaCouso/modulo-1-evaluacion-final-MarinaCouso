@@ -1,14 +1,13 @@
 .footer {
-  background-color: #304268;
-  color: white;
+  background-color: $colorFooter;
+  color: $colorText2;
   font-family: $fontText;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: center;
   position: relative;
 
   .footer-link {
-    color: white;
+    color: $colorText2;
     text-decoration: none;
   }
   @media all and (min-width: 768px) {
@@ -35,14 +34,12 @@
     flex-direction: row;
     &.pages {
       margin: 45px 30px 45px 30px;
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       order: 2;
     }
     &.rrss {
       margin: 45px 0px auto 0px;
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       order: 1;
     }
   }
@@ -59,12 +56,11 @@
 }
 .copy {
   font-size: 14px;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: center;
   margin-bottom: 45px;
   .heart {
-    color: #f26002;
+    color: $colorButtons;
   }
   @media all and (min-width: 768px) {
     align-items: flex-start;

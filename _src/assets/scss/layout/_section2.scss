@@ -1,7 +1,8 @@
 .section2 {
   display: grid;
   text-align: center;
-  background-color: #eff9ff;
+  background-color: $colorSection;
+  color: $colorText;
   .section2-h2 {
     grid-column: span 12;
     font-family: $fontTitle;
