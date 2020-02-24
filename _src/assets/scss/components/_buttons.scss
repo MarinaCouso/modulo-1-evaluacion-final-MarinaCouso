@@ -18,20 +18,42 @@
     padding: 0.5em 1.2em;
     margin: 0px auto 45px auto;
     font-size: 20px;
+    scale: 1;
+    transition: scale ease 2s;
+    &:hover {
+      scale: 1.5;
+    }
   }
   &.btn-more {
     background-color: #f26002;
+    transition: background-color ease 2s;
     color: white;
     padding: 0.5em 1.2em;
     width: 12em;
-    font-weight: bold;
+    font-weight: 500;
+    &:hover {
+      background-color: black;
+    }
   }
   &.btn-footer {
-    position: relative;
-    bottom: 1.2em;
+    display: inline-block;
+    position: absolute;
+    top: -22.5px;
+    left: 50%;
+    transform: translateX(-50%);
     border: none;
     width: 2.5em;
     height: 2.5em;
+    animation: btn-move 5s;
+    @keyframes btn-move {
+      from {
+        left: 150%;
+        transform: scale(5);
+      }
+      to {
+        left: 50%;
+      }
+    }
   }
   @media all and (min-width: 768px) {
     &.btn-header {
@@ -42,11 +64,6 @@
       padding: 0.5em 1.2em;
       margin: 0px auto 60px 0px;
     }
-    &.btn-footer {
-      position: absolute;
-      bottom: -39.7em;
-      right: 23em;
-    }
   }
   @media all and (min-width: 1200px) {
     &.btn-header {
@@ -55,11 +72,6 @@
     &.btn-go {
       width: 160px;
       padding: 0.5em 2em;
-    }
-    &.btn-footer {
-      position: absolute;
-      bottom: -39.7em;
-      right: 36em;
     }
   }
 }
