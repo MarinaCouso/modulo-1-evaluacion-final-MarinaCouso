@@ -7,6 +7,10 @@
 @import "layout/_section2.scss";
 @import "layout/_footer.scss";
 
+*:focus {
+  outline: 2px solid yellowgreen;
+}
+
 .principal-column {
   padding: 0px 15px 0px 15px;
   font-family: $fontText;
