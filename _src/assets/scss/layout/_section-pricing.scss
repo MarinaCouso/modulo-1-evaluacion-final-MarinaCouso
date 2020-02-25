@@ -1,0 +1,31 @@
+.section-pricing {
+  background-color: $colorFooter;
+  @include flex-column;
+  text-align: center;
+  color: $colorText2;
+}
+.section-pricing-title {
+  display: inline-block;
+}
+.section-pricing-subtitle {
+  display: inline-block;
+}
+
+@media all and (min-width: 768px) {
+  .section-pricing {
+    display: grid;
+    padding: auto 30px auto 30px;
+  }
+  .section-pricing-title {
+    grid-column: span 12;
+  }
+  .section-pricing-subtitle {
+    grid-column: span 6;
+  }
+  .subtitle1 {
+    text-align: left;
+  }
+  .subtitle2 {
+    text-align: right;
+  }
+}
