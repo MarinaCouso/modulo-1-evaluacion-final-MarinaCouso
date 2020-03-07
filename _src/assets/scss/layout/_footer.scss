@@ -20,13 +20,13 @@
     list-style: none;
     text-transform: uppercase;
     text-align: center;
-    line-height: 30px;
+    line-height: 1.875rem;
     &__pages {
-      margin: 60px 123px 30px 124px;
+      margin: 3.75rem 7.688rem 1.875rem 7.688rem;
       list-style: none;
     }
     &__rrss {
-      margin: 0px 86px 30px 87px;
+      margin: 0rem 5.375rem 1.875rem 5.375rem;
       list-style: none;
     }
 
@@ -36,41 +36,49 @@
       flex-direction: row;
 
       &__pages {
-        margin: 45px 30px 45px 30px;
+        margin: 2.813rem 1.875rem 2.813rem 1.875rem;
+        width: 13.125rem;
         @include flex-column;
         order: 1;
       }
       &__rrss {
-        margin: 45px 0px auto 0px;
+        margin: 2.813rem 0rem 6.563rem 0rem;
         @include flex-column;
+        width: 13.125rem;
         order: 2;
       }
     }
-  }
-  @media all and (min-width: 1200px) {
-    flex-direction: row;
-    &__pages {
-      margin-right: 0px;
-    }
-    &__rrss {
-      margin-right: 288.8px;
-      margin-left: 30px;
+
+    @media all and (min-width: 1200px) {
+      &__pages {
+        margin-right: 0rem;
+        width: 10.063rem;
+      }
+      &__rrss {
+        margin-right: 19.438rem;
+        margin-left: 1.875rem;
+        width: 9.938rem;
+      }
     }
   }
   .copy {
     font-size: 14px;
     @include flex-column;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 2.813rem;
+
     .heart {
       color: $colorButtons;
     }
     @media all and (min-width: 768px) {
       align-items: flex-start;
+      width: 13.125rem;
       order: 3;
     }
     @media all and (min-width: 1200px) {
-      margin: auto 0px auto 288.8px;
+      margin-left: 19.438rem;
+      margin-right: 1.875rem;
+      width: 9.938rem;
     }
   }
 }
