@@ -14,59 +14,63 @@
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-}
 
-.footer-menu-contents {
-  font-size: 16px;
-  list-style: none;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 30px;
-  &.pages {
-    margin: 60px 123px 30px 124px;
-  }
-  &.rrss {
-    margin: 0px 86px 30px 87px;
-  }
-  @media all and (min-width: 768px) {
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    &.pages {
-      margin: 45px 30px 45px 30px;
-      @include flex-column;
-      order: 2;
+  &__menu {
+    font-size: 16px;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 30px;
+    &__pages {
+      margin: 60px 123px 30px 124px;
+      list-style: none;
     }
-    &.rrss {
-      margin: 45px 0px auto 0px;
-      @include flex-column;
-      order: 1;
+    &__rrss {
+      margin: 0px 86px 30px 87px;
+      list-style: none;
+    }
+
+    @media all and (min-width: 768px) {
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+
+      &__pages {
+        margin: 45px 30px 45px 30px;
+        @include flex-column;
+        order: 1;
+      }
+      &__rrss {
+        margin: 45px 0px auto 0px;
+        @include flex-column;
+        order: 2;
+      }
     }
   }
   @media all and (min-width: 1200px) {
     flex-direction: row;
-    &.pages {
+    &__pages {
       margin-right: 0px;
     }
-    &.rrss {
+    &__rrss {
       margin-right: 288.8px;
       margin-left: 30px;
     }
   }
-}
-.copy {
-  font-size: 14px;
-  @include flex-column;
-  align-items: center;
-  margin-bottom: 45px;
-  .heart {
-    color: $colorButtons;
-  }
-  @media all and (min-width: 768px) {
-    align-items: flex-start;
-    order: 3;
-  }
-  @media all and (min-width: 1200px) {
-    margin: auto 0px auto 288.8px;
+  .copy {
+    font-size: 14px;
+    @include flex-column;
+    align-items: center;
+    margin-bottom: 45px;
+    .heart {
+      color: $colorButtons;
+    }
+    @media all and (min-width: 768px) {
+      align-items: flex-start;
+      order: 3;
+    }
+    @media all and (min-width: 1200px) {
+      margin: auto 0px auto 288.8px;
+    }
   }
 }
