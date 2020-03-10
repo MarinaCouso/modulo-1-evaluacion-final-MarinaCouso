@@ -1,23 +1,23 @@
-@import "core/_reset.scss";
-@import "core/_variables.scss";
-@import "core/_mixins.scss";
-@import "components/_buttons";
-@import "layout/_header.scss";
-@import "layout/_section1.scss";
-@import "layout/_section2.scss";
-@import "layout/_footer.scss";
+@import 'core/_reset.scss';
+@import 'core/_variables.scss';
+@import 'core/_mixins.scss';
+@import 'components/_buttons';
+@import 'layout/_header.scss';
+@import 'layout/_section1.scss';
+@import 'layout/_section2.scss';
+@import 'layout/_footer.scss';
 
 *:focus {
   outline: 2px solid yellowgreen;
 }
 
 .principal-column {
-  padding: 0px 15px 0px 15px;
+  padding: 0rem 0.938rem;
   font-family: $fontText;
   @media all and (min-width: 768px) {
-    padding: 0px 39px 0px 39px;
+    padding: 0rem 2.438rem;
   }
   @media all and (min-width: 1200px) {
-    padding: 0px 81.2px 0px 81.2px;
+    padding: 0rem 5.075rem;
   }
 }

@@ -14,7 +14,9 @@
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-
+  @media all and (min-width: 1200px) {
+    justify-content: center;
+  }
   &__menu {
     font-size: 16px;
     list-style: none;
@@ -48,37 +50,22 @@
         order: 2;
       }
     }
-
-    @media all and (min-width: 1200px) {
-      &__pages {
-        margin-right: 0rem;
-        width: 10.063rem;
-      }
-      &__rrss {
-        margin-right: 19.438rem;
-        margin-left: 1.875rem;
-        width: 9.938rem;
-      }
-    }
   }
   .copy {
     font-size: 14px;
     @include flex-column;
     align-items: center;
     margin-bottom: 2.813rem;
-
     .heart {
       color: $colorButtons;
     }
     @media all and (min-width: 768px) {
       align-items: flex-start;
-      width: 13.125rem;
       order: 3;
     }
     @media all and (min-width: 1200px) {
-      margin-left: 19.438rem;
-      margin-right: 1.875rem;
-      width: 9.938rem;
+      margin-left: 18.05rem;
+      margin-right: 1.9rem;
     }
   }
 }
